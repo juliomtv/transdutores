@@ -1,3 +1,14 @@
-Flask
 python-dotenv # Para facilitar o gerenciamento de variáveis de ambiente
 gunicorn
+bitarray==2.9.3
+bitstring==4.1.4
+blinker==1.9.0
+click==8.3.1
+colorama==0.4.6
+Flask==3.1.2
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+pyrtmp==0.3.1
+pywin32==311
+Werkzeug==3.1.3
