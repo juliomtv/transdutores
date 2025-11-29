@@ -1,2 +1,3 @@
 Flask
 python-dotenv # Para facilitar o gerenciamento de variáveis de ambiente
+gunicorn
