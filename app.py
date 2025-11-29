@@ -13,8 +13,12 @@ CSV_FILE = os.path.join(os.path.dirname(__file__), 'data.csv')
 # ATUALIZADO: Adicionado 'psi'
 CSV_HEADERS = ['id', 'descricao', 'validade_data_completa', 'numero_serie', 'localizacao', 'status_calibracao', 'psi']
 
-# Configurações de E-mail (Apenas destinatários são necessários para o Outlook)
+# Configurações de E-mail (SMTPLib)
 EMAIL_CONFIG = {
+    'SMTP_SERVER': os.environ.get('SMTP_SERVER', 'smtp.office365.com'), # Servidor SMTP (ex: smtp.office365.com)
+    'SMTP_PORT': int(os.environ.get('SMTP_PORT', 465)),
+    'EMAIL_USER': os.environ.get('EMAIL_USER', 'julio.marcostavaresviana@technipfmc.com'),
+    'EMAIL_PASSWORD': os.environ.get('EMAIL_PASSWORD', 'acesso1102@'), # Senha de Aplicativo/Token ou Senha Direta
     'RECIPIENTS': [r.strip() for r in os.environ.get('RECIPIENTS', 'julio.marcostavaresviana@technipfmc.com').split(',')]
 }
 
